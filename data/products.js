@@ -656,5 +656,39 @@ const products = [
       "apparel",
       "mens"
     ]
+  },
+  {
+    id: "bc2847e9-5323-403f-b7cf-57fde044a896",
+    image: "images/products/backpack.jpg",
+    name: "Intermediate size backpack",
+    rating: {
+      stars: 4.5,
+      count: 3158
+    },
+    priceCents: 2400,
+    keywords: [
+      "bag",
+      "backpack",
+      "luggage",
+      "men",
+      "women"
+    ]
+  },
+  {
+    id: "bc2847e9-5323-403f-b7cf-57fde044a897",
+    image: "images/products/umbrella.jpg",
+    name: "Intermediate size umbrella",
+    rating: {
+      stars: 4.5,
+      count: 3159
+    },
+    priceCents: 1200,
+    keywords: [
+      "umbrella",
+      "rain",
+      "carryit",
+      "men",
+      "women"
+    ]
   }
 ];
