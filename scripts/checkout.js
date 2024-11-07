@@ -98,10 +98,11 @@ document.querySelector('.js-order-summary').innerHTML = cartSummaryHtml;
 document.querySelectorAll('.js-delete-link')
 .forEach((link) =>{
     link.addEventListener('click',() => {
-        const productId = link.dataset.productId;  
+        const productId = link.dataset.productId;
+        if(productId){  
         removeItemFromCart(productId);
-
         const container = document.querySelector(`.js-cart-item-container-${productId}`);
         container.remove();
+        }
     });
 });
