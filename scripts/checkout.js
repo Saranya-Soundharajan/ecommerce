@@ -1,6 +1,7 @@
 import {cart,removeItemFromCart} from '../data/cart.js';
 import {products} from '../data/products.js';
 import { priceConvertion } from './utils/priceConversion.js';
+import { updateCartQuantity } from './amazon.js';
 
 let cartSummaryHtml = '';
 
@@ -106,3 +107,10 @@ document.querySelectorAll('.js-delete-link')
         }
     });
 });
+
+
+let cartStrength = 0;
+cart.forEach((cartitem) =>{
+    cartStrength = cartStrength+cartitem.quantity;
+});
+document.querySelector('.js-return-to-home-link').innerHTML = `${cartStrength}items`;
